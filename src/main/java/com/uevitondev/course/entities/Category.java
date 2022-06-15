@@ -1,13 +1,16 @@
 package com.uevitondev.course.entities;
 
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "tb_category")
@@ -20,6 +23,9 @@ public class Category implements Serializable {
 	private Long id;
 
 	private String name;
+	
+	@Transient
+	private Set<Product> products = new HashSet<Product>();
 
 	public Category() {
 
@@ -47,8 +53,8 @@ public class Category implements Serializable {
 		this.name = name;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	public Set<Product> getProducts() {
+		return products;
 	}
 
 	@Override
