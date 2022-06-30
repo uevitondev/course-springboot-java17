@@ -1,4 +1,3 @@
-# DSMovie 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/uevitondev/course-springboot-java17/blob/main/license) 
 
 # Sobre o projeto
