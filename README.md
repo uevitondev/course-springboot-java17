@@ -19,7 +19,7 @@ Todas operações dos endpoints recebem e retornan um objeto JSON, podendo ser c
 - Spring Boot
 - JPA / Hibernate
 - Maven
--PostMan
+- PostMan
 ## Implantação em produção
 - Back end: Heroku
 - Banco de dados: Postgresql
